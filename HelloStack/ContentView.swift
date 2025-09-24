@@ -40,9 +40,20 @@ struct ContentView: View {
                     Rectangle()
                         .frame(width: 60, height: 20)
                 }
-                Rectangle()
-                    .frame(width: 70, height: 40)
+                ZStack{
+                    Rectangle()
+                        .frame(width: 70, height: 40)
+                    VStack{
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .frame(width: 60, height: 10)
+                        Rectangle()
+                            .foregroundColor(.red)
+                            .frame(width: 60, height: 10)
+                    }
+                }
             }
+            
         }
         VStack{
             Rectangle()
