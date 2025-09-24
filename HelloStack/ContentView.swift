@@ -11,31 +11,36 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(.green)
+                .foregroundColor(.yellow)
                 .frame(width: 300, height: 300)
             VStack{
                 HStack{
-                Rectangle()
-                    .foregroundColor(.black)
-                    .frame(width: 70, height: 70)
-                Rectangle()
-                    .foregroundColor(.black)
-                    .frame(width: 70, height: 70)
-                
-                    }
-                VStack{
-                            Rectangle()
-                            .foregroundColor(.black)
-                            .frame(width: 50, height: 20)
                     Rectangle()
-                        .foregroundColor(.black)
-                        .frame(width: 100, height: 80)
-                        }
-                
+                        .frame(width: 60, height: 20)
+                    Rectangle()
+                        .foregroundColor(.gray)
+                        .frame(width: 90, height: 90)
+                    Rectangle()
+                        .foregroundColor(.gray)
+                        .frame(width: 90, height: 90)
+                    Rectangle()
+                        .frame(width: 60, height: 20)
+                }
+                Rectangle()
+                    .frame(width: 70, height: 40)
             }
-        
-           
+        }
+        VStack{
+            Rectangle()
+                .foregroundColor(.blue)
+                .frame(width: 300, height: 100)
+            HStack{
+                Rectangle()
+                    .frame(width: 70, height: 30)
+                Rectangle()
+                    .frame(width: 70, height: 30)
             }
+        }
         }
     }
 
