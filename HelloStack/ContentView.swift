@@ -17,12 +17,26 @@ struct ContentView: View {
                 HStack{
                     Rectangle()
                         .frame(width: 60, height: 20)
-                    Rectangle()
-                        .foregroundColor(.gray)
-                        .frame(width: 90, height: 90)
-                    Rectangle()
-                        .foregroundColor(.gray)
-                        .frame(width: 90, height: 90)
+                    ZStack{
+                        Rectangle()
+                            .foregroundColor(.gray)
+                            .frame(width: 90, height: 90)
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .frame(width: 70, height: 70)
+                        Rectangle()
+                            .frame(width: 20, height: 20)
+                    }
+                    ZStack{
+                        Rectangle()
+                            .foregroundColor(.gray)
+                            .frame(width: 90, height: 90)
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .frame(width: 70, height: 70)
+                        Rectangle()
+                            .frame(width: 20, height: 20)
+                    }
                     Rectangle()
                         .frame(width: 60, height: 20)
                 }
